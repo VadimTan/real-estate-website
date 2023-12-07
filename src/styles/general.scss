@@ -8,6 +8,16 @@
 	src: url(../assets/fonts/Manrope-Light.ttf) format(opentype);
 }
 
+@font-face {
+	font-family: SF-Pro-Regular;
+	src: url(../src/assets/fonts/SF-Pro-Display-Regular.otf) format(opentype);
+}
+
+@font-face {
+	font-family: SF-Pro-Display;
+	src: url(../src/assets/fonts/SF-Pro-Display-Bold.otf) format(opentype);
+}
+
 input {
 	outline: none;
 }

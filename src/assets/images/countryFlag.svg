@@ -1,0 +1,13 @@
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="country-flag" clip-path="url(#clip0_3074_1072)">
+<path id="Vector" d="M10.8461 2.19739H3.76188V4.71402H11.7091V3.06041C11.7091 2.58376 11.3228 2.19739 10.8461 2.19739Z" fill="#73AF00"/>
+<path id="Vector_2" d="M3.76188 9.74734H10.8461C11.3228 9.74734 11.7091 9.36097 11.7091 8.88432V7.23071H3.76188V9.74734Z" fill="#464655"/>
+<path id="Vector_3" d="M11.7091 4.71399H3.76195V7.23048H11.7091V4.71399Z" fill="#F5F5F5"/>
+<path id="Vector_4" d="M1.04863 2.19739C0.571984 2.19739 0.185608 2.58376 0.185608 3.06041V8.88427C0.185608 9.3609 0.571984 9.7473 1.04863 9.7473H3.76188V2.19739H1.04863Z" fill="#FF4B55"/>
+</g>
+<defs>
+<clipPath id="clip0_3074_1072">
+<rect width="11.5235" height="11.5235" fill="white" transform="translate(0.185608 0.210571)"/>
+</clipPath>
+</defs>
+</svg>

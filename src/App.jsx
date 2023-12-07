@@ -1,13 +1,11 @@
-import { Navigation } from './components/Navigation';
 import './App.scss';
 import './styles/general.scss';
-import { MainInfo } from './components/MainInfo';
+import { MainPage } from './pages/MainPage';
 
 function App() {
 	return (
 		<>
-			<Navigation />
-			<MainInfo />
+			<MainPage />
 		</>
 	);
 }
