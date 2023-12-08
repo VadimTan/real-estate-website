@@ -1,4 +1,5 @@
 import { AdModernWay } from './AdModernWay';
+import { FundedProperties } from './FundedProperties';
 import { HowItWorks } from './HowItWorks';
 import { InvestInfo } from './InvestInfo';
 
@@ -8,6 +9,7 @@ export const Main = () => {
 			<AdModernWay />
 			<HowItWorks />
 			<InvestInfo />
+			<FundedProperties />
 		</div>
 	);
 };

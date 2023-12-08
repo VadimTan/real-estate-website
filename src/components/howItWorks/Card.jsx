@@ -97,11 +97,11 @@ export const Card = () => {
 					</span>
 				</div>
 			</div>
-			<div className="inline-flex absolute top-[7px] right-[115px] gap-[3.5px]">
-				<span className="w-[21px] h-[2.5px] rounded-[1.7px] border-[0.8px] border-solid border-[#ebebf5]"></span>
-				<span className="w-[21px] h-[2.5px] rounded-[1.7px] border-[0.8px] border-solid border-[#ebebf5]"></span>
-				<span className="w-[21px] h-[2.5px] rounded-[1.7px] border-[0.8px] border-solid border-[#ebebf5]"></span>
-				<span className="w-[21px] h-[2.5px] rounded-[1.7px] border-[0.8px] border-solid border-[#ebebf5]"></span>
+			<div className="inline-flex absolute top-[7px] right-[110px] gap-[3.5px]">
+				<span className="w-[24px] h-[3px] rounded-[2px] border-[0.5px] border-solid border-[#ebebf5] border-opacity-60"></span>
+				<span className="w-[24px] h-[3px] rounded-[2px] border-[0.5px] border-solid border-[#ebebf5] border-opacity-60"></span>
+				<span className="w-[24px] h-[3px] rounded-[2px] border-[0.5px] border-solid border-[#ebebf5] border-opacity-60"></span>
+				<span className="w-[24px] h-[3px] rounded-[2px] border-[0.5px] border-solid border-[#ebebf5] border-opacity-60"></span>
 			</div>
 			<div className="flex absolute -right-[15px] -top-[20px] flex-col w-[96px] h-[96px] p-[12px] items-center gap-[12px] flex-shrink-0 rounded-[48px] border-[1.5px] border-solid border-[#FFF] bg-[#FFF] bg-opacity-60 backdrop-blur-[5.25px] shadow-[10px_10px_10px_0px_rgba(35,40,44,0.15)]">
 				<img

@@ -8,7 +8,7 @@ export const HowItWorks = () => {
 
 	return (
 		<>
-			<section className="inline-flex flex-col items-center gap-[48px]">
+			<section className="inline-flex flex-col items-center gap-[48px] pt-[50px]">
 				<div className="flex flex-col items-center gap-[16px]">
 					<h1 className="text-[#11B7B3] text-[48px] normal font-extrabold leading-[56px] tracking-[0.374px]">
 						<span className="text-manrope">How it</span> works
