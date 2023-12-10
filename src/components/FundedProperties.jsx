@@ -1,6 +1,7 @@
 import { arrayOfProperties } from '../constants';
 import { FundedPropertiesText } from './fundedProperties/FundedPropertiesText';
 import { Property } from './fundedProperties/Property';
+// import { MultipleSlider } from '../common/MultipleSlider';
 
 export const FundedProperties = () => {
 	return (

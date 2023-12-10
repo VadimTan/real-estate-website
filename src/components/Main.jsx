@@ -2,6 +2,7 @@ import { AdModernWay } from './AdModernWay';
 import { FundedProperties } from './FundedProperties';
 import { HowItWorks } from './HowItWorks';
 import { InvestInfo } from './InvestInfo';
+import { ReadyGetStarted } from './ReadyGetStarted';
 
 export const Main = () => {
 	return (
@@ -10,6 +11,7 @@ export const Main = () => {
 			<HowItWorks />
 			<InvestInfo />
 			<FundedProperties />
+			<ReadyGetStarted />
 		</div>
 	);
 };
