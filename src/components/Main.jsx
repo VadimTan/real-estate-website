@@ -6,12 +6,12 @@ import { ReadyGetStarted } from './ReadyGetStarted';
 
 export const Main = () => {
 	return (
-		<div className="flex flex-col items-center">
+		<main className="flex flex-col items-center">
 			<AdModernWay />
 			<HowItWorks />
 			<InvestInfo />
 			<FundedProperties />
 			<ReadyGetStarted />
-		</div>
+		</main>
 	);
 };

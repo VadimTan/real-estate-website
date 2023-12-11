@@ -1,4 +1,4 @@
-import { arrayOfInvestInfo } from '../constants';
+import { arrayOfInvestInfo } from '../constants/constants';
 import { InvestingCard } from './investInfo/InvestingCard';
 import { RealEstInvestText } from './investInfo/RealEstInvestText';
 

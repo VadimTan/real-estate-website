@@ -1,22 +1,37 @@
 /* eslint-disable react/prop-types */
-import imgProperty from '../../assets/images/imgProperty.png';
 import tagOval from '../../assets/images/tagOval.svg';
 import countryFlag from '../../assets/images/countryFlag.svg';
+import { hostUrl } from '../../constants/constants';
+import { SimpleSlider } from '../../common/SimpleSlider';
 
 export const Property = ({ item }) => {
+	const annual_profit = {
+		from: item.annual_profit.split('-')[0].trim(),
+		to: item.annual_profit.split('-')[1].trim(),
+	};
+	const period = {
+		from: item.period.split('-')[0].trim(),
+		to: item.period.split('-')[1].trim(),
+	};
+
+	const propertyImages = item.images;
+
 	return (
-		<div className="flex flex-col items-start gap-[2px] flex-[1_0_0] w-fit">
-			<div className="self-stretch relative w-fit">
-				<img
-					src={imgProperty}
-					alt="imgProperty"
-				/>
-				<div className="flex absolute bottom-[7px] right-[140px] gap-[4px]">
-					<span className="w-[24px] h-[3px] rounded-[2px] border-[0.5px] border-solid border-[#ebebf5] border-opacity-60"></span>
-					<span className="w-[24px] h-[3px] rounded-[2px] border-[0.5px] border-solid border-[#ebebf5] border-opacity-60"></span>
-					<span className="w-[24px] h-[3px] rounded-[2px] border-[0.5px] border-solid border-[#ebebf5] border-opacity-60"></span>
-					<span className="w-[24px] h-[3px] rounded-[2px] border-[0.5px] border-solid border-[#ebebf5] border-opacity-60"></span>
-				</div>
+		<div className="flex flex-col items-start gap-[2px] flex-[1_0_0] w-[378px]">
+			<div className="self-stretch relative">
+				<SimpleSlider>
+					{propertyImages.map((img) => {
+						console.log(img);
+						return (
+							<img
+								key={img.id}
+								className="bg-cover bg-no-repeat rounded-t-[24px] rounded-b-[12px] h-[220px]"
+								src={`${hostUrl}${img.path}`}
+								alt="image"
+							/>
+						);
+					})}
+				</SimpleSlider>
 			</div>
 			<div className="flex flex-col items-start gap-[12px] self-stretch px-[16px] pt-[16px] pb-[24px] rounded-t-[12px] rounded-b-[24px] bg-[#F2F2F7] h-fit w-[378px]">
 				<div className="flex items-start gap-[8px]">
@@ -35,48 +50,52 @@ export const Property = ({ item }) => {
 							alt=""
 						/>
 						<span className="text-[#000] font-[SF-Pro-Regular] text-[11px] non-italic font-semibold leading-[13px] tracking-[0.1px]">
-							{item.country}
+							{item.location}
 						</span>
 					</span>
 				</div>
 				<span className="text-[#000] font-[SF-Pro-Display] text-[24px] non-italic font-normal leading-[32px] tracking-[0.8px]">
-					{item.title}
+					{item.name}
 				</span>
 				<div className="flex flex-col items-start gap-[3.5px] self-stretch">
 					<div className="flex items-baseline gap-[3.5px] self-stretch flex-[1_0_0]">
 						<span className="text-[#007AFF] font-[SF-Pro-Regular] text-[13px] non-italic font-semibold leading-[18px] tracking-[-0.078px]">
-							{item.currency}
+							AED
 						</span>
 						<span className="text-[#007AFF] w-[100%] font-[SF-Pro-Regular] text-[17px] non-italic font-semibold leading-[22px] tracking-[-0.408px]">
-							{item.value}
+							{item.total_price}
 						</span>
 						<span className="text-[#8E8E93] whitespace-nowrap font-[Manrope-Light] text-[12px] non-italic font-normal leading-[18px] tracking-[-0.078px]">
-							{item.percent}% Funded
+							{item.funded}% Funded
 						</span>
 					</div>
 					<div
 						className={`flex flex-col relative w-full h-[3.5px] bg-[#E5E5EA] rounded-[4px] items-start gap-[7px] self-stretch`}>
 						<div
-							style={{ width: item.percent + '%' }}
+							style={{ width: item.funded + '%' }}
 							className={`h-[3.5px] absolute top-0 left-0 self-stretch bg-[#007AFF] rounded-[4px]`}
 						/>
 					</div>
 				</div>
 				<div className="flex flex-col items-start gap-[8px] self-stretch">
-					<div className="flex items-start gap-[24px] self-stretch relative">
-						<span className="text-[#000] font-[SF-Pro-Regular] text-[13px] non-italic font-normal leading-[18px] tracking-[0.1px]">
-							Annual Profit
-						</span>
-						<span className="text-[#000] font-[SF-Pro-Display] text-[12px] non-italic font-semibold leading-[18px] tracking-[0.1px] absolute right-0">
-							{item.currency + ' ' + item.value}
-						</span>
+					<div className="flex items-start gap-[24px] self-stretch justify-between">
+						<div>
+							<span className="text-[#000] font-[SF-Pro-Regular] text-[13px] non-italic font-normal leading-[18px] tracking-[0.1px]">
+								Annual Profit
+							</span>
+						</div>
+						<div>
+							<span className="text-[#000] font-[SF-Pro-Display] text-[12px] non-italic font-semibold leading-[18px] tracking-[0.1px]">
+								{annual_profit.from + ' - ' + annual_profit.to}
+							</span>
+						</div>
 					</div>
-					<div className="flex items-start gap-[24px] self-stretch relative">
+					<div className="flex items-start gap-[24px] self-stretch justify-between">
 						<span className="text-[#000] font-[SF-Pro-Regular] text-[13px] non-italic font-normal leading-[18px] tracking-[0.1px]">
 							Handover
 						</span>
-						<span className="text-[#000] font-[SF-Pro-Display] text-[12px] non-italic font-semibold leading-[18px] tracking-[0.1px] absolute right-0">
-							{item.handover} Year
+						<span className="text-[#000] font-[SF-Pro-Display] text-[12px] non-italic font-semibold leading-[18px] tracking-[0.1px]">
+							{period.from + ' - ' + period.to} Years
 						</span>
 					</div>
 				</div>

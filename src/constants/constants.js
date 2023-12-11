@@ -1,3 +1,5 @@
+export const hostUrl = 'https://afehe-hwf.buzz/storage/';
+
 export const arrayHowItWorks = [
 	{
 		id: 1,
@@ -43,35 +45,5 @@ export const arrayOfInvestInfo = [
 		title: 'Trusted entity with real estate expertise',
 		content:
 			'Stake is regulated by the DFSA and our team has held leadership positions at the biggest developers in Dubai for over 20 years',
-	},
-];
-
-export const arrayOfProperties = [
-	{
-		title: '2 Bed Villa in Dubai',
-		currency: 'AED',
-		value: '1,595,518',
-		percent: '48',
-		country: 'Dubai',
-		status: 'Hight ROI',
-		handover: '1',
-	},
-	{
-		title: '3 Bed Villa in Dubai',
-		currency: 'AED',
-		value: '1,595,518',
-		percent: '18',
-		country: 'Dubai',
-		status: 'Hight ROI',
-		handover: '1',
-	},
-	{
-		title: '4 Bed Villa in Dubai',
-		currency: 'AED',
-		value: '1,595,518',
-		percent: '38',
-		country: 'Dubai',
-		status: 'Hight ROI',
-		handover: '1',
 	},
 ];

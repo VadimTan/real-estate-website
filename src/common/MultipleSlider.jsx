@@ -3,14 +3,23 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export const MultipleSlider = ({ children }) => {
+export const MultipleSlider = ({ children, slider }) => {
 	const settings = {
-		dots: true,
+		dots: false,
+		adaptiveHeight: true,
+		swipe: false,
+		arrows: true,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 3,
 		slidesToScroll: 3,
 	};
 
-	return <Slider {...settings}>{children}</Slider>;
+	return (
+		<Slider
+			ref={(c) => (slider.current = c)}
+			{...settings}>
+			{children}
+		</Slider>
+	);
 };

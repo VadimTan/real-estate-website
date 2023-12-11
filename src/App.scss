@@ -13,6 +13,58 @@
 	color: #888;
 }
 
+.slick-slider.slick-initialized {
+	max-width: 78vw;
+	width: 100%;
+}
+
+.slick-slide.slick-active div {
+	display: block;
+}
+
+.slick-active {
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+.slick-dots.custom {
+	position: absolute;
+	display: flex;
+	bottom: 8px;
+	left: 0;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.slick-dots.custom li {
+	width: 24px;
+	height: 3px;
+	border-radius: 2px;
+	border: 0.5px solid #ebebf5;
+	padding: 0;
+}
+
+.slick-dots.custom li button::before {
+	width: 24px;
+	height: 3px;
+	border-radius: 2px;
+	border: 0.5px solid #ebebf5;
+	padding: 0;
+	content: none;
+}
+
+.slick-dots.custom li button::after {
+	width: 24px;
+	height: 3px;
+	border-radius: 2px;
+	border: 0.5px solid #ebebf5;
+	padding: 0;
+	content: none;
+}
+
 .text-manrope {
 	color: var(--system-background-dark-elevated-primary, #1c1c1e);
 	font-family: Manrope-Light;

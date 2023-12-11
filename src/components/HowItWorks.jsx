@@ -1,4 +1,4 @@
-import { arrayHowItWorks } from '../constants';
+import { arrayHowItWorks } from '../constants/constants';
 import { HowToMakeMoney } from './howItWorks/HowToMakeMoney';
 import { InfoAboutTeam } from './howItWorks/InfoAboutTeam';
 
