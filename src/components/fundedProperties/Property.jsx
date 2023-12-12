@@ -33,7 +33,7 @@ export const Property = ({ item }) => {
 					})}
 				</SimpleSlider>
 			</div>
-			<div className="flex flex-col items-start gap-[12px] self-stretch px-[16px] pt-[16px] pb-[24px] rounded-t-[12px] rounded-b-[24px] bg-[#F2F2F7] h-fit w-[378px]">
+			<div className="flex flex-col items-start gap-[12px] self-stretch px-[16px] pt-[16px] pb-[24px] rounded-t-[12px] rounded-b-[24px] bg-[#F2F2F7]">
 				<div className="flex items-start gap-[8px]">
 					<span className="flex py-[4px] px-[8px] gap-[4px] rounded-[12px] bg-[#fff]">
 						<img
@@ -79,24 +79,28 @@ export const Property = ({ item }) => {
 				</div>
 				<div className="flex flex-col items-start gap-[8px] self-stretch">
 					<div className="flex items-start gap-[24px] self-stretch justify-between">
-						<div>
+						<div className="flex">
 							<span className="text-[#000] font-[SF-Pro-Regular] text-[13px] non-italic font-normal leading-[18px] tracking-[0.1px]">
 								Annual Profit
 							</span>
 						</div>
-						<div>
+						<div className="flex">
 							<span className="text-[#000] font-[SF-Pro-Display] text-[12px] non-italic font-semibold leading-[18px] tracking-[0.1px]">
 								{annual_profit.from + ' - ' + annual_profit.to}
 							</span>
 						</div>
 					</div>
 					<div className="flex items-start gap-[24px] self-stretch justify-between">
-						<span className="text-[#000] font-[SF-Pro-Regular] text-[13px] non-italic font-normal leading-[18px] tracking-[0.1px]">
-							Handover
-						</span>
-						<span className="text-[#000] font-[SF-Pro-Display] text-[12px] non-italic font-semibold leading-[18px] tracking-[0.1px]">
-							{period.from + ' - ' + period.to} Years
-						</span>
+						<div className="flex">
+							<span className="text-[#000] font-[SF-Pro-Regular] text-[13px] non-italic font-normal leading-[18px] tracking-[0.1px]">
+								Handover
+							</span>
+						</div>
+						<div className="flex">
+							<span className="text-[#000] font-[SF-Pro-Display] text-[12px] non-italic font-semibold leading-[18px] tracking-[0.1px]">
+								{period.from + ' - ' + period.to} Years
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>

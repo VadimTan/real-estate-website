@@ -33,21 +33,23 @@ export const FundedProperties = () => {
 	return (
 		<section
 			id="properties"
-			className="flex flex-col items-center gap-[48px] py-[160px]">
-			<FundedPropertiesText
-				nextSlide={nextSlide}
-				prevSlide={prevSlide}
-			/>
-			<div className="flex items-start w-full gap-[24px]">
-				<MultipleSlider slider={slider}>
-					{listOfProperties.map((item) => {
-						return (
-							<div key={item.id}>
-								<Property item={item} />
-							</div>
-						);
-					})}
-				</MultipleSlider>
+			className="flex flex-col justify-center items-center py-[160px] px-[50px] 3xl:px-[360px] xltablet:px-[50px] xltablet:py-[80px] tablet:py-[80px] tablet:px-[24px] smtablet:py-[80px] smtablet:px-[70px]">
+			<div className="flex flex-col gap-[48px] tablet:px-[24px]">
+				<FundedPropertiesText
+					nextSlide={nextSlide}
+					prevSlide={prevSlide}
+				/>
+				<div className="flex items-start gap-[24px]">
+					<MultipleSlider slider={slider}>
+						{listOfProperties.map((item) => {
+							return (
+								<div key={item.id}>
+									<Property item={item} />
+								</div>
+							);
+						})}
+					</MultipleSlider>
+				</div>
 			</div>
 		</section>
 	);

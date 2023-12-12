@@ -7,12 +7,40 @@ export const MultipleSlider = ({ children, slider }) => {
 	const settings = {
 		dots: false,
 		adaptiveHeight: true,
+		variableWidth: true,
+		centerMode: true,
 		swipe: false,
-		arrows: true,
+		arrows: false,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 3,
 		slidesToScroll: 3,
+		responsive: [
+			{
+				breakpoint: 1920,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 320,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+				},
+			},
+		],
 	};
 
 	return (

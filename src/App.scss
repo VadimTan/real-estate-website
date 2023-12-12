@@ -14,12 +14,12 @@
 }
 
 .slick-slider.slick-initialized {
-	max-width: 78vw;
+	max-width: 88.5vw;
 	width: 100%;
 }
 
 .slick-slide.slick-active div {
-	display: block;
+	display: flex;
 }
 
 .slick-active {
@@ -65,16 +65,6 @@
 	content: none;
 }
 
-.text-manrope {
-	color: var(--system-background-dark-elevated-primary, #1c1c1e);
-	font-family: Manrope-Light;
-	font-size: 48px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 56px;
-	letter-spacing: 0.374px;
-}
-
 .text-manrope-white {
 	color: var(--system-background-dark-elevated-primary, #fff);
 	font-family: Manrope-Light;
@@ -92,16 +82,6 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: 32px;
-	letter-spacing: 0.374px;
-}
-
-.text-manrope-small {
-	color: #9999a3;
-	font-family: Manrope-Light;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 20px;
 	letter-spacing: 0.374px;
 }
 

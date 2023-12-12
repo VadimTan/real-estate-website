@@ -24,7 +24,7 @@ export const Nav = () => {
 	});
 
 	return (
-		<header className="flex h-[64px] z-50 bg-[#FFF] sticky top-0 px-[110px]">
+		<header className="flex h-[64px] z-50 bg-[#FFF] sticky top-0 px-[110px] 3xl:px-[360px] xltablet:px-[50px] tablet:px-[24px] smtablet:px-[24px]">
 			<nav className="flex gap-[40px] justify-between items-center w-full">
 				<div className="flex items-center gap-[40px]">
 					<img

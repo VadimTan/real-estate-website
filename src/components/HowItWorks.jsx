@@ -10,10 +10,13 @@ export const HowItWorks = () => {
 		<>
 			<section className="inline-flex flex-col items-center gap-[48px] pt-[50px]">
 				<div className="flex flex-col items-center gap-[16px]">
-					<h1 className="text-[#11B7B3] text-[48px] normal font-extrabold leading-[56px] tracking-[0.374px]">
-						<span className="text-manrope">How it</span> works
+					<h1 className="text-[#11B7B3] text-[48px] smtablet:text-[40px] normal font-extrabold leading-[56px] tracking-[0.374px]">
+						<span className="text-[#1c1c1e] font-[Manrope-Light] text-[48px] smtablet:text-[40px] normal font-normal leading-[56px] tracking-[0.374px]">
+							How it
+						</span>{' '}
+						works
 					</h1>
-					<p className="text-[#9999A3] text-center text-[16px] font-normal leading-[24px] tracking-[0.374px]">
+					<p className="text-[#9999A3] text-center text-[16px] smtablet:text-[14px] font-normal leading-[24px] tracking-[0.374px]">
 						DubX is available to savvy investors all over the world
 					</p>
 				</div>
@@ -34,7 +37,9 @@ export const HowItWorks = () => {
 										</div>
 										<div className="flex flex-col items-start self-stretch">
 											<span className="text-manrope-medium">{item.title}</span>
-											<p className="text-manrope-small">{item.content}</p>
+											<p className="text-[#9999a3] font-[Manrope-Light] text-[16px] smtablet:text-[14px] font-medium leading-[20px] tracking-[0.374px]">
+												{item.content}
+											</p>
 										</div>
 									</div>
 								</div>
@@ -57,7 +62,9 @@ export const HowItWorks = () => {
 										</div>
 										<div className="flex flex-col items-start self-stretch">
 											<span className="text-manrope-medium">{item.title}</span>
-											<p className="text-manrope-small">{item.content}</p>
+											<p className="text-[#9999a3] font-[Manrope-Light] text-[16px] smtablet:text-[14px] font-medium leading-[20px] tracking-[0.374px]">
+												{item.content}
+											</p>
 										</div>
 									</div>
 								</div>

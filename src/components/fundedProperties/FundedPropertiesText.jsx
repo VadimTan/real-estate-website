@@ -6,13 +6,16 @@ export const FundedPropertiesText = ({ nextSlide, prevSlide }) => {
 	return (
 		<div className="flex items-end gap-[32px] self-stretch">
 			<div className="flex flex-col items-start flex-[1_0_0] gap-[16px]">
-				<h1 className="text-[#11B7B3] text-[48px] normal font-extrabold leading-[56px] tracking-[0.374px]">
-					Funded <span className="text-manrope">properties</span>
+				<h1 className="text-[#11B7B3] text-[48px] smtablet:text-[40px] normal font-extrabold leading-[56px] tracking-[0.374px]">
+					Funded{' '}
+					<span className="text-[#1c1c1e] font-[Manrope-Light] text-[48px] smtablet:text-[40px] normal font-normal leading-[56px] tracking-[0.374px]">
+						properties
+					</span>
 				</h1>
-				<p className="text-[#9999A3] font-[Manrope-Light] text-[16px] font-normal leading-[24px] tracking-[0.374px]">
+				<p className="text-[#9999A3] font-[Manrope-Light] text-[16px] smtablet:text-[14px] font-normal leading-[24px] tracking-[0.374px]">
 					With over 20 years of experience leading major real estate companies
-					in Dubai, we utilize our expertise and network to find
-					<br /> properties with the greatest investment potential for you.
+					in Dubai, we utilize our expertise and network to find properties with
+					the greatest investment potential for you.
 				</p>
 			</div>
 			<div className="flex justify-center items-start gap-[16px]">

@@ -14,7 +14,9 @@ export const InvestingCard = ({ item }) => {
 			</div>
 			<div className="flex flex-col items-start gap-[16px] self-stretch">
 				<span className="text-manrope-medium-light">{item.title}</span>
-				<span className="text-manrope-small-light">{item.content}</span>
+				<span className="text-[#9999a3] font-[Manrope-Light] text-[16px] smtablet:text-[14px] non-italic font-normal leading-[20px] tracking-[0.374px]">
+					{item.content}
+				</span>
 			</div>
 		</div>
 	);
