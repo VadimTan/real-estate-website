@@ -4,8 +4,7 @@ import { InvestingCard } from './investInfo/InvestingCard';
 import { RealEstInvestText } from './investInfo/RealEstInvestText';
 
 export const InvestInfo = () => {
-	const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
+	const [screenWidth, setScreenWidth] = useState(0);
 	const handleResize = () => {
 		setScreenWidth(window.innerWidth);
 	};
@@ -25,7 +24,7 @@ export const InvestInfo = () => {
 	return (
 		<section className="flex flex-col justify-center items-center py-[64px] px-[110px] 3xl:px-[360px] xltablet:px-[50px] tablet:px-[24px] gap-[16px] bg-[#2C2C2E] w-full">
 			<RealEstInvestText />
-			{screenWidth <= 992 ? (
+			{screenWidth < 992 && screenWidth > 576 && (
 				<div className="flex flex-col justify-center items-center gap-[24px]">
 					<div className="flex flex-wrap justify-center gap-[24px]">
 						{firstRow.map((item, idx) => {
@@ -50,7 +49,9 @@ export const InvestInfo = () => {
 						</div>
 					</div>
 				</div>
-			) : (
+			)}
+
+			{screenWidth >= 992 && (
 				<div className="flex justify-between items-center gap-[24px]">
 					{arrayOfInvestInfo.map((item, idx) => {
 						return (
@@ -61,6 +62,21 @@ export const InvestInfo = () => {
 							</div>
 						);
 					})}
+				</div>
+			)}
+			{screenWidth < 576 && (
+				<div className="flex flex-col justify-center items-center gap-[24px]">
+					<div className="flex flex-wrap items-center gap-[24px]">
+						{arrayOfInvestInfo.map((item, idx) => {
+							return (
+								<div
+									key={idx}
+									className="flex self-stretch items-center h-[fit]">
+									<InvestingCard item={item} />
+								</div>
+							);
+						})}
+					</div>
 				</div>
 			)}
 		</section>

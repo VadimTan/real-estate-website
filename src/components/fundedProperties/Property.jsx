@@ -21,7 +21,6 @@ export const Property = ({ item }) => {
 			<div className="self-stretch relative">
 				<SimpleSlider>
 					{propertyImages.map((img) => {
-						console.log(img);
 						return (
 							<img
 								key={img.id}

@@ -2,7 +2,9 @@ import Iphone from '../../assets/images/IphoneProMax.svg';
 
 export const InfoAboutTeam = () => {
 	return (
-		<section className="w-[836px] smtablet:w-[628px] h-fit relative flex-shrink-0 rounded-[24px] bg-[#2C2C2E] flex flex-col items-center my-[160px]">
+		<section
+			id="about-us"
+			className="w-[836px] phone:w-[530px] smtablet:px-[70px] h-fit relative flex-shrink-0 rounded-[24px] bg-[#2C2C2E] flex flex-col items-center my-[160px] phone:mt-[60px] phone:mb-[100px]">
 			<div className="flex">
 				<img
 					className="w-[255px] h-[460px] flex-shrink-0"

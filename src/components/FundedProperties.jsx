@@ -21,7 +21,6 @@ export const FundedProperties = () => {
 		const getAllProperties = async () => {
 			try {
 				const response = await axios.get(`${baseUrl}/property/getFunded`);
-				console.log(response.data);
 				setListOfProperties(response.data.data);
 			} catch (error) {
 				return error.message;

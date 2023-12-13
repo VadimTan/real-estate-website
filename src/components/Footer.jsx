@@ -1,14 +1,14 @@
 export const Footer = () => {
 	return (
-		<footer className="flex flex-col items-start pt-[48px] px-[110px] gap-[16px] smtablet:px-[24px] tablet:pb-[32px] 3xl:px-[360px] tablet:px-[24px]  xltablet:px-[24px]">
-			<div className="flex py-[32px] items-start gap-[24px] self-stretch border-b-[1px] border-solid border-[#E5E5EA]">
-				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000]">
+		<footer className="flex flex-col items-start pt-[48px] pb-[32px] px-[110px] gap-[16px] smtablet:px-[24px] tablet:pb-[32px] 3xl:px-[360px] tablet:px-[24px] xltablet:px-[24px]">
+			<div className="flex xsm:flex-col phone:text-center py-[32px] items-start gap-[24px] self-stretch border-b-[1px] border-solid border-[#E5E5EA]">
+				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000] whitespace-nowrap">
 					© 2023 DubX. All rights reserved
 				</span>
-				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000]">
+				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000] whitespace-nowrap">
 					Terms and Conditions
 				</span>
-				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000]">
+				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000] whitespace-nowrap">
 					Privacy Policy
 				</span>
 			</div>
@@ -17,7 +17,7 @@ export const Footer = () => {
 				Services Authority (DFSA) as an Operator of a Property Investment
 				Crowdfunding Platform. The Stake platform consists of the website, web
 				platform and mobile app. By using Stake, you agree to be bound by the{' '}
-				<span className="font-[Manrope-Light] text-[12px] non-italic font-normal leading-[16px] tracking-[-0.1px] underline decoration-[#cccccc] ">
+				<span className="font-[Manrope-Light] text-[12px] non-italic font-normal leading-[16px] tracking-[-0.1px] underline decoration-[#cccccc]">
 					Terms & Conditions
 				</span>
 				,{' '}

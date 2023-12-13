@@ -4,8 +4,8 @@ import MobileVector from '../assets/images/MobileVector.svg';
 
 export const AdModernWay = () => {
 	return (
-		<section className="flex items-center flex-col gap-[16px] px-[110px] 3xl:pl-[360px] 3xl:pr-[230px] xltablet:pl-[50px] xltablet:pr-0 tablet:px-[24px] tablet:pt-[48px]">
-			<div className="flex items-center gap-[24px] tablet:flex-col smtablet:px-[46px]">
+		<section className="flex items-center flex-col gap-[16px] px-[110px] 3xl:pl-[360px] 3xl:pr-[230px] tablet:px-[24px] tablet:pt-[48px] phone:px-[24px] xsm:px-[16px]">
+			<div className="flex items-center gap-[24px] tablet:flex-col smtablet:px-[46px] phone:px-[46px]">
 				<div className="flex flex-col tablet:justify-center tablet:items-center">
 					<div className="flex flex-col gap-[16px]">
 						<span className="flex flex-col tablet:items-center tablet:text-center">
@@ -51,7 +51,7 @@ export const AdModernWay = () => {
 				</div>
 				<div className="flex">
 					<img
-						className="w-[612px] h-[480px] max-w-none"
+						className="w-[612px] h-[480px] smtablet:w-[440px] smtablet:h-[350px] phone:w-[390px] phone:h-[300px] xsm:w-[325px] xsm:h-[250px] max-w-none"
 						src={MobileVector}
 					/>
 				</div>

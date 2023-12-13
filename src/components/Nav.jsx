@@ -6,6 +6,20 @@ import logoDubX from '../assets/images/logoDubX.svg';
 export const Nav = () => {
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const [showButtons, setShowButtons] = useState(false);
+	const [screenWidth, setScreenWidth] = useState(0);
+
+	const handleResize = () => {
+		setScreenWidth(window.innerWidth);
+	};
+
+	useEffect(() => {
+		setScreenWidth(window.innerWidth);
+
+		window.addEventListener('resize', handleResize);
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
 
 	const handleScroll = () => {
 		const currentPosition = window.scrollY;
@@ -24,28 +38,30 @@ export const Nav = () => {
 	});
 
 	return (
-		<header className="flex h-[64px] z-50 bg-[#FFF] sticky top-0 px-[110px] 3xl:px-[360px] xltablet:px-[50px] tablet:px-[24px] smtablet:px-[24px]">
+		<header className="flex h-[64px] z-[9999] bg-[#FFF] sticky top-0 px-[110px] 3xl:px-[360px] tablet:px-[24px] xsm:px-[16px]">
 			<nav className="flex gap-[40px] justify-between items-center w-full">
 				<div className="flex items-center gap-[40px]">
 					<img
+						className="cursor-pointer"
+						onClick={() => window.location.reload()}
 						src={logoDubX}
 						alt="logoDubX"
 					/>
 					<div className="flex items-start gap-[24px]">
 						<a
-							className="text-[#3C3C43] text-[14px] normal font-semibold leading-[16px] tracking-[-0.14px] whitespace-nowrap"
+							className="text-[#3C3C43] text-[14px] normal font-semibold leading-[16px] tracking-[-0.14px]"
 							href="#properties">
 							Properties
 						</a>
 						<a
 							className="text-[#3C3C43] text-[14px] normal font-semibold leading-[16px] tracking-[-0.14px] whitespace-nowrap"
-							href="#">
+							href="#about-us">
 							About Us
 						</a>
 					</div>
 				</div>
 
-				{showButtons && (
+				{showButtons && screenWidth > 576 && (
 					<div className="flex items-center gap-[8px]">
 						<a
 							href="#"
