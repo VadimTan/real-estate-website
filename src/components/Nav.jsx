@@ -38,15 +38,18 @@ export const Nav = () => {
 	});
 
 	return (
-		<header className="flex h-[64px] z-[9999] bg-[#FFF] sticky top-0 px-[110px] 3xl:px-[360px] tablet:px-[24px] xsm:px-[16px]">
+		<header
+			id="#"
+			className="flex h-[64px] z-[9999] bg-[#FFF] sticky top-0 px-[110px] 3xl:px-[360px] tablet:px-[24px] xsm:px-[16px]">
 			<nav className="flex gap-[40px] justify-between items-center w-full">
 				<div className="flex items-center gap-[40px]">
-					<img
-						className="cursor-pointer"
-						onClick={() => window.location.reload()}
-						src={logoDubX}
-						alt="logoDubX"
-					/>
+					<a href="#">
+						<img
+							className="cursor-pointer"
+							src={logoDubX}
+							alt="logoDubX"
+						/>
+					</a>
 					<div className="flex items-start gap-[24px]">
 						<a
 							className="text-[#3C3C43] text-[14px] normal font-semibold leading-[16px] tracking-[-0.14px]"

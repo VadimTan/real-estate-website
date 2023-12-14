@@ -6,9 +6,6 @@ import 'slick-carousel/slick/slick-theme.css';
 export const MultipleSlider = ({ children, slider }) => {
 	const settings = {
 		dots: false,
-		adaptiveHeight: true,
-		variableWidth: true,
-		centerMode: true,
 		swipe: false,
 		arrows: false,
 		infinite: true,
@@ -25,10 +22,18 @@ export const MultipleSlider = ({ children, slider }) => {
 				},
 			},
 			{
-				breakpoint: 768,
+				breakpoint: 992,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 690,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
 					infinite: true,
 				},
 			},

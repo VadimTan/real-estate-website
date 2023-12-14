@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
+import { useState, useEffect } from 'react';
 import tagOval from '../../assets/images/tagOval.svg';
 import countryFlag from '../../assets/images/countryFlag.svg';
 import { hostUrl } from '../../constants/constants';
 import { SimpleSlider } from '../../common/SimpleSlider';
 
 export const Property = ({ item }) => {
+	const [screenWidth, setScreenWidth] = useState(0);
 	const annual_profit = {
 		from: item.annual_profit.split('-')[0].trim(),
 		to: item.annual_profit.split('-')[1].trim(),
@@ -16,8 +18,23 @@ export const Property = ({ item }) => {
 
 	const propertyImages = item.images;
 
+	const handleResize = () => {
+		setScreenWidth(window.innerWidth);
+	};
+
+	useEffect(() => {
+		setScreenWidth(window.innerWidth);
+
+		window.addEventListener('resize', handleResize);
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
+
 	return (
-		<div className="flex flex-col items-start gap-[2px] flex-[1_0_0] w-[378px]">
+		<div
+			style={{ width: screenWidth > 800 ? '378px' : '306px' }}
+			className="flex flex-col items-start gap-[2px] flex-[1_0_0]">
 			<div className="self-stretch relative">
 				<SimpleSlider>
 					{propertyImages.map((img) => {
