@@ -1,22 +1,10 @@
-import { useState, useEffect } from 'react';
 import { arrayOfInvestInfo } from '../constants/constants';
 import { InvestingCard } from './investInfo/InvestingCard';
 import { RealEstInvestText } from './investInfo/RealEstInvestText';
+import useScreenWidth from '../common/useScreenWidth';
 
 export const InvestInfo = () => {
-	const [screenWidth, setScreenWidth] = useState(0);
-	const handleResize = () => {
-		setScreenWidth(window.innerWidth);
-	};
-
-	useEffect(() => {
-		setScreenWidth(window.innerWidth);
-
-		window.addEventListener('resize', handleResize);
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
+	const screenWidth = useScreenWidth();
 
 	const firstRow = arrayOfInvestInfo.slice(0, 2);
 	const secondRow = arrayOfInvestInfo.slice(2, 4);

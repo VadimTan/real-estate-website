@@ -51,6 +51,7 @@ export const AdModernWay = () => {
 				</div>
 				<div className="flex">
 					<img
+						id="vector-img"
 						className="w-[612px] h-[480px] smtablet:w-[440px] smtablet:h-[350px] phone:w-[390px] phone:h-[300px] xsm:w-[325px] xsm:h-[250px] max-w-none"
 						src={MobileVector}
 					/>

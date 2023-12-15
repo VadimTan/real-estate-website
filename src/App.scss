@@ -34,6 +34,24 @@
 		max-width: 92vw;
 		width: 100%;
 	}
+	header {
+		padding: 0 50px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	section#about-us {
+		width: 630px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	section#about-us {
+		width: 630px;
+	}
+	img#vector-img {
+		width: 580px;
+	}
 }
 
 @media screen and (max-width: 320px) {
@@ -44,12 +62,17 @@
 	div#text-about-us {
 		height: 175px;
 	}
-}
-
-@media screen and (max-width: 320px) {
 	div#how-it-works-cards {
 		width: 310px;
 		height: 160px;
+	}
+	img#dub-x-logo {
+		padding: 0;
+		width: 70px;
+		height: 80px;
+	}
+	div#nav-div {
+		gap: 24px;
 	}
 }
 

@@ -2,24 +2,12 @@ import { useState, useEffect } from 'react';
 import AppStore from '../assets/images/AppStore.svg';
 import GooglePlay from '../assets/images/GooglePlay.svg';
 import logoDubX from '../assets/images/logoDubX.svg';
+import useScreenWidth from '../common/useScreenWidth';
 
 export const Nav = () => {
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const [showButtons, setShowButtons] = useState(false);
-	const [screenWidth, setScreenWidth] = useState(0);
-
-	const handleResize = () => {
-		setScreenWidth(window.innerWidth);
-	};
-
-	useEffect(() => {
-		setScreenWidth(window.innerWidth);
-
-		window.addEventListener('resize', handleResize);
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
+	const screenWidth = useScreenWidth();
 
 	const handleScroll = () => {
 		const currentPosition = window.scrollY;
@@ -42,10 +30,13 @@ export const Nav = () => {
 			id="#"
 			className="flex h-[64px] z-[9999] bg-[#FFF] sticky top-0 px-[110px] 3xl:px-[360px] tablet:px-[24px] xsm:px-[16px]">
 			<nav className="flex gap-[40px] justify-between items-center w-full">
-				<div className="flex items-center gap-[40px]">
+				<div
+					id="nav-div"
+					className="flex items-center gap-[40px]">
 					<a href="#">
 						<img
-							className="cursor-pointer"
+							id="dub-x-logo"
+							className="cursor-pointer max-w-none"
 							src={logoDubX}
 							alt="logoDubX"
 						/>

@@ -1,29 +1,16 @@
-import { useState, useEffect } from 'react';
 import dubXMultiLogo from '../assets/images/dubXMultiLogo.svg';
 import { ReadyToStartText } from './ReadyToGetStarted/ReadyToStartText';
 import IphoneReadyToStart from '../assets/images/IphoneReadyToStart.svg';
+import useScreenWidth from '../common/useScreenWidth';
 
 export const ReadyGetStarted = () => {
-	const [screenWidth, setScreenWidth] = useState(0);
+	const screenWidth = useScreenWidth();
 	const backgroundImageStyle = {
 		backgroundImage: `url(${dubXMultiLogo})`,
 		backgroundSize: 'cover',
 		backgroundRepeat: 'no-repeat',
 		backgroundPosition: 'center center',
 	};
-
-	const handleResize = () => {
-		setScreenWidth(window.innerWidth);
-	};
-
-	useEffect(() => {
-		setScreenWidth(window.innerWidth);
-
-		window.addEventListener('resize', handleResize);
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
 
 	return (
 		<>

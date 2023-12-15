@@ -1,23 +1,10 @@
-import { useState, useEffect } from 'react';
 import { Card } from './Card';
 import light from '../../assets/images/light.svg';
 import filled2 from '../../assets/images/filled2.svg';
+import useScreenWidth from '../../common/useScreenWidth';
 
 export const HowToMakeMoney = () => {
-	const [screenWidth, setScreenWidth] = useState(0);
-
-	const handleResize = () => {
-		setScreenWidth(window.innerWidth);
-	};
-
-	useEffect(() => {
-		setScreenWidth(window.innerWidth);
-
-		window.addEventListener('resize', handleResize);
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
+	const screenWidth = useScreenWidth();
 
 	return (
 		<section className="flex flex-col items-center gap-[48px] pb-[160px] tablet:py-[80px] smtablet:px-[70px]">

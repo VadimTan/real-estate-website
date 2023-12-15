@@ -1,25 +1,12 @@
-import { useState, useEffect } from 'react';
 import { arrayHowItWorks } from '../constants/constants';
 import { HowToMakeMoney } from './howItWorks/HowToMakeMoney';
 import { InfoAboutTeam } from './howItWorks/InfoAboutTeam';
+import useScreenWidth from '../common/useScreenWidth';
 
 export const HowItWorks = () => {
 	const topItems = arrayHowItWorks.slice(0, 2);
 	const bottomItems = arrayHowItWorks.slice(2, 4);
-	const [screenWidth, setScreenWidth] = useState(0);
-
-	const handleResize = () => {
-		setScreenWidth(window.innerWidth);
-	};
-
-	useEffect(() => {
-		setScreenWidth(window.innerWidth);
-
-		window.addEventListener('resize', handleResize);
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
+	const screenWidth = useScreenWidth();
 
 	return (
 		<>

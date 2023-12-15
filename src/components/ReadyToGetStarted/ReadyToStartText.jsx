@@ -1,22 +1,9 @@
-import { useState, useEffect } from 'react';
 import AppStore from '../../assets/images/AppStore.svg';
 import GooglePlay from '../../assets/images/GooglePlay.svg';
+import useScreenWidth from '../../common/useScreenWidth';
 
 export const ReadyToStartText = () => {
-	const [screenWidth, setScreenWidth] = useState(0);
-
-	const handleResize = () => {
-		setScreenWidth(window.innerWidth);
-	};
-
-	useEffect(() => {
-		setScreenWidth(window.innerWidth);
-
-		window.addEventListener('resize', handleResize);
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
+	const screenWidth = useScreenWidth();
 
 	return (
 		<>

@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
-import { useState, useEffect } from 'react';
 import tagOval from '../../assets/images/tagOval.svg';
 import countryFlag from '../../assets/images/countryFlag.svg';
 import { hostUrl } from '../../constants/constants';
 import { SimpleSlider } from '../../common/SimpleSlider';
+import useScreenWidth from '../../common/useScreenWidth';
 
 export const Property = ({ item }) => {
-	const [screenWidth, setScreenWidth] = useState(0);
+	const screenWidth = useScreenWidth();
 	const annual_profit = {
 		from: item.annual_profit.split('-')[0].trim(),
 		to: item.annual_profit.split('-')[1].trim(),
@@ -17,19 +17,6 @@ export const Property = ({ item }) => {
 	};
 
 	const propertyImages = item.images;
-
-	const handleResize = () => {
-		setScreenWidth(window.innerWidth);
-	};
-
-	useEffect(() => {
-		setScreenWidth(window.innerWidth);
-
-		window.addEventListener('resize', handleResize);
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
 
 	return (
 		<div
