@@ -32,7 +32,7 @@ export const FundedProperties = () => {
 	return (
 		<section
 			id="properties"
-			className="flex flex-col justify-center items-center py-[160px] px-[110px] 3xl:px-[360px] xltablet:px-[50px] xltablet:py-[80px] tablet:py-[80px]">
+			className="flex flex-col justify-center items-center 3xl:px-[360px] xltablet:py-[80px] tablet:py-[80px]">
 			<div className="flex flex-col gap-[48px]">
 				<FundedPropertiesText
 					nextSlide={nextSlide}
