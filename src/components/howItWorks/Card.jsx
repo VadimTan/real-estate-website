@@ -4,8 +4,11 @@ import countryFlag from '../../assets/images/countryFlag.svg';
 import tagOval from '../../assets/images/tagOval.svg';
 import bedIcon from '../../assets/images/bedIcon.png';
 import icon_bookmark from '../../assets/images/icon_Bookmark.svg';
+import useScreenWidth from '../../common/useScreenWidth';
 
 export const Card = () => {
+	const screenWidth = useScreenWidth();
+
 	return (
 		<div className="flex flex-col relative flex-shrink-0">
 			<div className="flex flex-col justify-center items-center flex-shrink-0">
@@ -103,13 +106,23 @@ export const Card = () => {
 				<span className="w-[24px] h-[3px] rounded-[2px] border-[0.5px] border-solid border-[#ebebf5] border-opacity-60" />
 				<span className="w-[24px] h-[3px] rounded-[2px] border-[0.5px] border-solid border-[#ebebf5] border-opacity-60" />
 			</div>
-			<div className="flex absolute -right-[15px] -top-[20px] flex-col w-[96px] h-[96px] p-[12px] items-center gap-[12px] flex-shrink-0 rounded-[48px] border-[1.5px] border-solid border-[#FFF] bg-[#FFF] bg-opacity-60 backdrop-blur-[5.25px] shadow-[10px_10px_10px_0px_rgba(35,40,44,0.15)]">
-				<img
-					className="absolute right-[31px] top-[32px] flex-shrink-0"
-					src={icon_bookmark}
-					alt="bookmark"
-				/>
-			</div>
+			{screenWidth <= 320 ? (
+				<div className="flex absolute right-0 -top-[15px] flex-col w-[96px] h-[96px] p-[12px] items-center gap-[12px] flex-shrink-0 rounded-[48px] border-[1.5px] border-solid border-[#FFF] bg-[#FFF] bg-opacity-60 backdrop-blur-[5.25px] shadow-[10px_10px_10px_0px_rgba(35,40,44,0.15)]">
+					<img
+						className="absolute right-[31px] top-[32px] flex-shrink-0"
+						src={icon_bookmark}
+						alt="bookmark"
+					/>
+				</div>
+			) : (
+				<div className="flex absolute -right-[15px] -top-[20px] flex-col w-[96px] h-[96px] p-[12px] items-center gap-[12px] flex-shrink-0 rounded-[48px] border-[1.5px] border-solid border-[#FFF] bg-[#FFF] bg-opacity-60 backdrop-blur-[5.25px] shadow-[10px_10px_10px_0px_rgba(35,40,44,0.15)]">
+					<img
+						className="absolute right-[31px] top-[32px] flex-shrink-0"
+						src={icon_bookmark}
+						alt="bookmark"
+					/>
+				</div>
+			)}
 		</div>
 	);
 };
