@@ -22,9 +22,16 @@
 	width: 100%;
 }
 
+@media screen and (max-width: 2560px) {
+	.slick-slider.slick-initialized {
+		max-width: 46vw;
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 1920px) {
 	.slick-slider.slick-initialized {
-		max-width: 80vw;
+		max-width: 63vw;
 		width: 100%;
 	}
 }

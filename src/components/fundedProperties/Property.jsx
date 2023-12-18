@@ -17,7 +17,11 @@ export const Property = ({ item }) => {
 	};
 
 	const propertyImages = item.images;
-
+	const filteredPropertyImages = propertyImages.sort(
+		(img) => img.main_image === 1
+	);
+	console.log('Filtered: ', filteredPropertyImages);
+	console.log('Images: ', propertyImages);
 	return (
 		<div
 			style={{ width: screenWidth > 800 ? '378px' : '306px' }}
