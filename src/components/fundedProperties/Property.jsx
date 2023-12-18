@@ -23,7 +23,9 @@ export const Property = ({ item }) => {
 
 	return (
 		<div
-			style={{ width: screenWidth > 800 ? '378px' : '305px' }}
+			style={{
+				width: screenWidth > 800 ? '378px' : '280px',
+			}}
 			className="flex flex-col items-start gap-[2px] flex-[1_0_0]">
 			<div className="self-stretch relative">
 				<SimpleSlider>

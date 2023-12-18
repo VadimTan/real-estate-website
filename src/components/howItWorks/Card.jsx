@@ -14,7 +14,7 @@ export const Card = () => {
 					src={imageSlider}
 					alt="imageSlider"
 				/>
-				<div className="flex flex-col absolute bottom-1 items-start w-[312px] pt-[14px] pb-[21px] px-[10px] gap-[14px] rounded-t-[14px] rounded-b-[32px] bg-[#fff]">
+				<div className="flex flex-col absolute bottom-1 items-start w-[310px] pt-[14px] pb-[21px] px-[10px] gap-[14px] rounded-t-[14px] rounded-b-[32px] bg-[#fff]">
 					<span className="text-[#000] font-[SF-Pro-Display] text-[20px] non-italic font-normal leading-[25px] tracking-[0.38px]">
 						3 Bed Villa in Dubai
 					</span>

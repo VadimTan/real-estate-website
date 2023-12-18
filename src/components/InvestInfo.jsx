@@ -10,7 +10,9 @@ export const InvestInfo = () => {
 	const secondRow = arrayOfInvestInfo.slice(2, 4);
 
 	return (
-		<section className="flex flex-col justify-center items-center py-[64px] px-[110px] 3xl:px-[360px] xltablet:px-[50px] tablet:px-[24px] gap-[16px] bg-[#2C2C2E] w-full">
+		<section
+			id="invest-cards"
+			className="flex flex-col justify-center items-center py-[64px] px-[110px] 3xl:px-[360px] xltablet:px-[50px] tablet:px-[24px] gap-[16px] bg-[#2C2C2E] w-full">
 			<RealEstInvestText />
 			{screenWidth < 992 && screenWidth > 576 && (
 				<div className="flex flex-col justify-center items-center gap-[24px]">

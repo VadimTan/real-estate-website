@@ -11,7 +11,7 @@ export const HowItWorks = () => {
 	return (
 		<>
 			{screenWidth >= 576 ? (
-				<section className="inline-flex flex-col items-center gap-[48px] pt-[50px] smtablet:px-[48px]">
+				<section className="inline-flex flex-col items-center gap-[48px] pt-[50px]">
 					<div className="flex flex-col items-center gap-[16px]">
 						<h1 className="text-[#11B7B3] text-[48px] smtablet:text-[40px] normal font-extrabold leading-[56px] tracking-[0.374px]">
 							<span className="text-[#1c1c1e] font-[Manrope-Light] text-[48px] smtablet:text-[40px] normal font-normal leading-[56px] tracking-[0.374px]">
@@ -81,7 +81,7 @@ export const HowItWorks = () => {
 					</div>
 				</section>
 			) : (
-				<section className="flex flex-col items-center gap-[48px] pt-[50px] smtablet:px-[48px]">
+				<section className="flex flex-col items-center gap-[48px] pt-[50px]">
 					<div className="flex flex-col items-center gap-[16px]">
 						<h1 className="text-[#11B7B3] text-[48px] smtablet:text-[40px] normal font-extrabold leading-[56px] tracking-[0.374px]">
 							<span className="text-[#1c1c1e] font-[Manrope-Light] text-[48px] smtablet:text-[40px] normal font-normal leading-[56px] tracking-[0.374px]">
