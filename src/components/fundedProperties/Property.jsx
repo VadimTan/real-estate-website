@@ -23,7 +23,7 @@ export const Property = ({ item }) => {
 
 	return (
 		<div
-			style={{ width: screenWidth > 800 ? '378px' : '306px' }}
+			style={{ width: screenWidth > 800 ? '378px' : '305px' }}
 			className="flex flex-col items-start gap-[2px] flex-[1_0_0]">
 			<div className="self-stretch relative">
 				<SimpleSlider>
@@ -62,7 +62,11 @@ export const Property = ({ item }) => {
 				</div>
 				<span
 					id="item-name"
-					className="text-[#000] font-[SF-Pro-Display] text-[24px] non-italic font-normal leading-[32px] tracking-[0.8px] whitespace-nowrap overflow-hidden text-ellipsis w-[350px]">
+					style={{
+						width: screenWidth > 800 ? '300px' : '205px',
+						textOverflow: screenWidth > 800 ? 'clip' : 'ellipsis',
+					}}
+					className="text-[#000] font-[SF-Pro-Display] text-[24px] non-italic font-normal leading-[32px] tracking-[0.8px] whitespace-nowrap overflow-hidden">
 					{item.name}
 				</span>
 				<div className="flex flex-col items-start gap-[3.5px] self-stretch">
