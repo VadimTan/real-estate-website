@@ -62,7 +62,7 @@ export const Property = ({ item }) => {
 				</div>
 				<span
 					id="item-name"
-					className="text-[#000] font-[SF-Pro-Display] text-[14px] non-italic font-normal leading-[32px] tracking-[0.8px] whitespace-nowrap overflow-hidden text-ellipsis w-[350px]">
+					className="text-[#000] font-[SF-Pro-Display] text-[24px] non-italic font-normal leading-[32px] tracking-[0.8px] whitespace-nowrap overflow-hidden text-ellipsis w-[350px]">
 					{item.name}
 				</span>
 				<div className="flex flex-col items-start gap-[3.5px] self-stretch">
