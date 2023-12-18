@@ -2,13 +2,13 @@ export const Footer = () => {
 	return (
 		<footer className="flex flex-col items-start pt-[48px] pb-[32px] px-[110px] gap-[16px] smtablet:px-[24px] tablet:pb-[32px] 3xl:px-[360px] tablet:px-[24px] xltablet:px-[24px]">
 			<div className="flex xsm:flex-col phone:text-center py-[32px] items-start gap-[24px] self-stretch border-b-[1px] border-solid border-[#E5E5EA]">
-				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000] whitespace-nowrap">
+				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000]">
 					© 2023 DubX. All rights reserved
 				</span>
-				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000] whitespace-nowrap">
+				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000]">
 					Terms and Conditions
 				</span>
-				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000] whitespace-nowrap">
+				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000]">
 					Privacy Policy
 				</span>
 			</div>
