@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 1920px) {
 	.slick-slider.slick-initialized {
-		max-width: 63vw;
+		max-width: 78vw;
 		width: 100%;
 	}
 }
@@ -49,6 +49,9 @@
 @media screen and (max-width: 768px) {
 	section#about-us {
 		width: 630px;
+	}
+	span#item-name {
+		width: 285px;
 	}
 }
 

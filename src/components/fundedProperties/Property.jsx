@@ -18,17 +18,16 @@ export const Property = ({ item }) => {
 
 	const propertyImages = item.images;
 	const filteredPropertyImages = propertyImages.sort(
-		(img) => img.main_image === 1
+		(a, b) => b.main_image - a.main_image
 	);
-	console.log('Filtered: ', filteredPropertyImages);
-	console.log('Images: ', propertyImages);
+
 	return (
 		<div
 			style={{ width: screenWidth > 800 ? '378px' : '306px' }}
 			className="flex flex-col items-start gap-[2px] flex-[1_0_0]">
 			<div className="self-stretch relative">
 				<SimpleSlider>
-					{propertyImages.map((img) => {
+					{filteredPropertyImages.map((img) => {
 						return (
 							<img
 								key={img.id}
@@ -61,7 +60,9 @@ export const Property = ({ item }) => {
 						</span>
 					</span>
 				</div>
-				<span className="text-[#000] font-[SF-Pro-Display] text-[24px] non-italic font-normal leading-[32px] tracking-[0.8px]">
+				<span
+					id="item-name"
+					className="text-[#000] font-[SF-Pro-Display] text-[24px] non-italic font-normal leading-[32px] tracking-[0.8px] whitespace-nowrap overflow-hidden text-ellipsis w-[350px]">
 					{item.name}
 				</span>
 				<div className="flex flex-col items-start gap-[3.5px] self-stretch">
