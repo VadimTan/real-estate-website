@@ -28,7 +28,7 @@ export const Nav = () => {
 	return (
 		<header
 			id="#"
-			className="flex h-[64px] z-[9999] bg-[#FFF] sticky top-0 px-[110px] 3xl:px-[360px] tablet:px-[24px]">
+			className="flex h-[64px] z-[9999] bg-[#FFF] sticky top-0 3xl:px-[360px]">
 			<nav className="flex gap-[40px] justify-between items-center w-full">
 				<div
 					id="nav-div"

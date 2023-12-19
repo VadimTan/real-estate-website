@@ -9,9 +9,11 @@ export const AdModernWay = () => {
 	return (
 		<section
 			id="ad-modern-way"
-			className="flex items-center flex-col gap-[16px] 3xl:pl-[360px] 3xl:pr-[230px] tablet:pt-[48px]">
+			className="flex items-center flex-col gap-[16px] tablet:pt-[48px]">
 			<div className="flex items-center gap-[24px] tablet:flex-col">
-				<div className="flex flex-col tablet:justify-center tablet:items-center">
+				<div
+					id="modern-way-block"
+					className="flex flex-col tablet:justify-center tablet:items-center w-1/2">
 					<div className="flex flex-col gap-[16px]">
 						<span className="flex flex-col tablet:items-center tablet:text-center">
 							<h1 className="text-[#11B7B3] text-[48px] smtablet:text-[40px] normal font-extrabold leading-[56px] tracking-[0.374px]">
@@ -54,7 +56,9 @@ export const AdModernWay = () => {
 						</a>
 					</div>
 				</div>
-				<div className="flex">
+				<div
+					id="modern-way-block"
+					className="flex">
 					<Suspense fallback={<Loader />}>
 						<LazyImage />
 					</Suspense>

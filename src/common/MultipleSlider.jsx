@@ -30,7 +30,7 @@ export const MultipleSlider = ({ children, slider }) => {
 				},
 			},
 			{
-				breakpoint: 320,
+				breakpoint: 690,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
