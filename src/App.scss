@@ -12,6 +12,12 @@
 	color: #888;
 }
 
+.blurred-image {
+	filter: blur(10px);
+	width: 100%;
+	height: auto;
+}
+
 .global-loader {
 	position: fixed;
 	width: 100%;
@@ -129,9 +135,6 @@ header {
 
 	section#properties {
 		padding: 80px 16px;
-	}
-	img#info-about {
-		width: 200px;
 	}
 	header {
 		padding: 16px;

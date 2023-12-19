@@ -1,11 +1,11 @@
-import MobileVector from '../assets/images/MobileVector.svg';
+import normalImage from '../assets/images/Group2.png';
 
 const LazyImageVector = () => {
 	return (
 		<img
 			id="vector-img"
 			className="w-full max-w-none"
-			src={MobileVector}
+			src={normalImage}
 			alt="Mobile Vector"
 		/>
 	);

@@ -1,10 +1,30 @@
 import AppStore from '../assets/images/AppStore.svg';
 import GooglePlay from '../assets/images/GooglePlay.svg';
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useState, useEffect } from 'react';
 import { Loader } from '../common/Loader';
+import blurredImage from '../assets/images/MobileVector.png';
 
 export const AdModernWay = () => {
 	const LazyImage = lazy(() => import('../common/LazyImageVector'));
+	const [showOriginal, setShowOriginal] = useState(false);
+
+	const BlurredImage = () => {
+		return (
+			<img
+				className="blurred-image"
+				src={blurredImage}
+				alt="Blurred Image"
+			/>
+		);
+	};
+
+	useEffect(() => {
+		const img = new Image();
+		img.onload = () => {
+			setShowOriginal(true);
+		};
+		img.src = blurredImage;
+	}, [LazyImage]);
 
 	return (
 		<section
@@ -60,7 +80,7 @@ export const AdModernWay = () => {
 					id="modern-way-block"
 					className="flex">
 					<Suspense fallback={<Loader />}>
-						<LazyImage />
+						{showOriginal ? <LazyImage /> : <BlurredImage />}
 					</Suspense>
 				</div>
 			</div>
