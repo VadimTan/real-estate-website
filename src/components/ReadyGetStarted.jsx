@@ -1,6 +1,6 @@
 import dubXMultiLogo from '../assets/images/dubXMultiLogo.svg';
 import { ReadyToStartText } from './ReadyToGetStarted/ReadyToStartText';
-import IphoneReadyToStart from '../assets/images/IphoneReadyToStart.svg';
+import IphoneReadyToStart from '../assets/images/Scene2.png';
 import useScreenWidth from '../common/useScreenWidth';
 
 export const ReadyGetStarted = () => {
@@ -22,6 +22,7 @@ export const ReadyGetStarted = () => {
 						alt="dubX-multi-logo">
 						<ReadyToStartText />
 						<img
+							className="w-1/3 max-w-none"
 							src={IphoneReadyToStart}
 							alt="iphone-ready-to-start"
 						/>

@@ -84,7 +84,7 @@ export const Property = ({ item }) => {
 						</span>
 					</div>
 					<div
-						className={`flex flex-col relative w-full h-[3.5px] bg-[#E5E5EA] rounded-[4px] items-start gap-[7px] self-stretch`}>
+						className={`flex flex-col relative w-full h-[3.5px] bg-[#E5E5EA] rounded-[4px] items-start gap-[7px]`}>
 						<div
 							style={{ width: item.funded + '%' }}
 							className={`h-[3.5px] absolute top-0 left-0 self-stretch bg-[#007AFF] rounded-[4px]`}

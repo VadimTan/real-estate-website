@@ -1,7 +1,6 @@
 import AppStore from '../assets/images/AppStore.svg';
 import GooglePlay from '../assets/images/GooglePlay.svg';
 import { lazy, Suspense, useState, useEffect } from 'react';
-import { Loader } from '../common/Loader';
 import blurredImage from '../assets/images/MobileVector.png';
 
 export const AdModernWay = () => {
@@ -29,7 +28,7 @@ export const AdModernWay = () => {
 	return (
 		<section
 			id="ad-modern-way"
-			className="flex items-center flex-col gap-[16px] tablet:pt-[48px]">
+			className="flex items-center flex-col gap-[16px]">
 			<div className="flex items-center gap-[24px] tablet:flex-col">
 				<div
 					id="modern-way-block"
@@ -79,7 +78,7 @@ export const AdModernWay = () => {
 				<div
 					id="modern-way-block"
 					className="flex">
-					<Suspense fallback={<Loader />}>
+					<Suspense fallback={<BlurredImage />}>
 						{showOriginal ? <LazyImage /> : <BlurredImage />}
 					</Suspense>
 				</div>
