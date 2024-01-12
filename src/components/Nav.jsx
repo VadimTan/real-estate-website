@@ -32,26 +32,35 @@ export const Nav = () => {
 			<nav className="flex gap-[40px] justify-between items-center w-full">
 				<div
 					id="nav-div"
-					className="flex items-center gap-[40px]">
-					<a href="#">
-						<img
-							id="dub-x-logo"
-							className="cursor-pointer max-w-none"
-							src={logoDubX}
-							alt="logoDubX"
-						/>
-					</a>
-					<div className="flex items-start gap-[24px]">
-						<a
-							className="text-[#3C3C43] text-[14px] normal font-semibold leading-[16px] tracking-[-0.14px]"
-							href="#properties">
-							Properties
+					className="flex gap-[200px]">
+					<div className="flex items-center gap-[40px]">
+						<a href="#">
+							<img
+								id="dub-x-logo"
+								className="cursor-pointer max-w-none"
+								src={logoDubX}
+								alt="logoDubX"
+							/>
 						</a>
-						<a
-							className="text-[#3C3C43] text-[14px] normal font-semibold leading-[16px] tracking-[-0.14px] whitespace-nowrap"
-							href="#about-us">
-							About Us
-						</a>
+						<div className="flex items-start gap-[24px]">
+							<a
+								className="text-[#3C3C43] text-[14px] normal font-semibold leading-[16px] tracking-[-0.14px]"
+								href="#properties">
+								Properties
+							</a>
+							<a
+								className="text-[#3C3C43] text-[14px] normal font-semibold leading-[16px] tracking-[-0.14px] whitespace-nowrap"
+								href="#about-us">
+								About Us
+							</a>
+						</div>
+					</div>
+					<div
+						id="dubX-text-center"
+						className="flex items-center">
+						<span className="text-[#3C3C43] text-[14px] normal font-semibold leading-[16px] tracking-[-0.14px]">
+							DubX by GREEN PARK TECHNOLOGY
+						</span>
 					</div>
 				</div>
 

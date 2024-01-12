@@ -159,6 +159,12 @@ header {
 	}
 }
 
+@media screen and (min-width: 320px) and (max-width: 430px) {
+	div#dubX-text-center {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 576px) {
 	div#how-it-works-cards {
 		width: 250px;

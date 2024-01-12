@@ -5,7 +5,7 @@ export const Footer = () => {
 				id="privacy-policy"
 				className="flex phone:text-center py-[32px] items-start gap-[24px] self-stretch border-b-[1px] border-solid border-[#E5E5EA]">
 				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000]">
-					© 2023 DubX. All rights reserved
+					© 2023 DubX - GREEN PARK TECHNOLOGY. All rights reserved
 				</span>
 				<span className="font-[Manrope-Light] text-[14px] non-italic font-normal leading-[16px] tracking-[-0.2px] text-[#000]">
 					Terms and Conditions
@@ -15,10 +15,11 @@ export const Footer = () => {
 				</span>
 			</div>
 			<p className="font-[Manrope-Light] text-[12px] non-italic font-normal leading-[16px] tracking-[-0.1px] opacity-80">
-				Stake Properties Limited (Stake) is regulated by the Dubai Financial
+				DubX - GREEN PARK TECHNOLOGY is regulated by the Dubai Financial
 				Services Authority (DFSA) as an Operator of a Property Investment
-				Crowdfunding Platform. The Stake platform consists of the website, web
-				platform and mobile app. By using Stake, you agree to be bound by the{' '}
+				Crowdfunding Platform. The DubX - GREEN PARK TECHNOLOGY platform
+				consists of the website, web platform and mobile app. By using DubX -
+				GREEN PARK TECHNOLOGY, you agree to be bound by the{' '}
 				<span className="font-[Manrope-Light] text-[12px] non-italic font-normal leading-[16px] tracking-[-0.1px] underline decoration-[#cccccc]">
 					Terms & Conditions
 				</span>
@@ -30,13 +31,13 @@ export const Footer = () => {
 				<span className="font-[Manrope-Light] text-[12px] non-italic font-normal leading-[16px] tracking-[-0.1px] underline decoration-[#cccccc]">
 					Privacy Policy
 				</span>
-				. All investments through Stake carry risk and are not guaranteed.
-				Please read{' '}
+				. All investments through DubX - GREEN PARK TECHNOLOGY carry risk and
+				are not guaranteed. Please read{' '}
 				<span className="font-[Manrope-Light] text-[12px] non-italic font-normal leading-[16px] tracking-[-0.2px] underline decoration-[#cccccc]">
 					Key Risks
 				</span>{' '}
-				before investing. Stake Properties Limited does not have Islamic Finance
-				endorsement from the DFSA.
+				before investing. DubX - GREEN PARK TECHNOLOGY does not have Islamic
+				Finance endorsement from the DFSA.
 			</p>
 		</footer>
 	);
